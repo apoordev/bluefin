@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 function sudoif(){
-    if [[ "${TERM_PROGRAM:-}" == "vscode" && \
+    if [[ "${TERM_PROGRAM:-}" == "vscodium" && \
           ! -f /run/.containerenv && \
           ! -f /.dockerenv ]]; then
         [[ $(command -v systemd-run) ]] && \
